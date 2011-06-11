@@ -1,5 +1,6 @@
-fun gcd (0,y) = y
-  | gcd (x,y) = gcd (y mod x, x)
+fun gcd (0,x) = x
+  | gcd (y,x) = gcd (x mod y, y)
+
 fun init x y =4*(x)*(y)+x+y
 
 fun box x y dx dy =  Int.toLarge(2*(x+1-dx)*(y+1-dy))
@@ -33,7 +34,7 @@ fun lines w h lmin lmax =
     
 
 
-(* MLTON STUFF *)
+(* MLTON STUFF 
 
 
 fun main () = 
@@ -56,3 +57,5 @@ fun main () =
     print (st^"\n")
   end
 val _ = main ()
+
+*)
