@@ -1,8 +1,10 @@
 public class Node
 {
 	private int data = 0;
-	private Node right;
-	private Node left;
+  private Node fright = null;
+  private Node fleft = null;
+	private Node right = null;
+	private Node left = null;
 	public Node(int me,Node r,Node l)
 	{
 		data=me;
@@ -39,4 +41,28 @@ public class Node
 	{
 		this.left = left;
 	}
+<<<<<<< HEAD
+=======
+	
+	public Node getFRight()
+	{
+		return fright;
+	}
+	public void setFRight(Node fright)
+	{
+		this.fright = fright;
+	}
+	public Node getFLeft()
+	{
+		return fleft;
+	}
+	public void setFLeft(Node fleft)
+	{
+		this.fleft = fleft;
+	}
+	public void printNode()
+  {
+    System.out.print(" - "+ data );
+  }
+>>>>>>> mgreg/master
 }
